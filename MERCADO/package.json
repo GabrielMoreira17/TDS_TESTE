@@ -1,0 +1,16 @@
+{
+  "name": "mercado",
+  "version": "1.0.0",
+  "main": "cliente.js",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "dev": "node index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
