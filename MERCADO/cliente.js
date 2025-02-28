@@ -34,9 +34,24 @@ function ListaCliente()
     return clientes;
 }
 
+function DeletaCliente(id)
+{
+    for(let i = 0; i < clientes.length; i++)
+    {
+        if(clientes[i].id == id)
+        {
+            clientes.splice(i, 1);
+            console.log("Cliente deletado com sucesso!");
+            return true;
+        }
+    }
+    return false;
+}
+
 module.exports = 
 {
     CadastraCliente,
     ListaCliente,
-    AtualizaCliente
+    AtualizaCliente,
+    DeletaCliente
 }

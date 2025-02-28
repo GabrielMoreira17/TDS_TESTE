@@ -27,10 +27,11 @@ function AtualizaPedido(id, id_produtos, id_cliente, quantidade, total)
     {
         if(pedidos[i].id == id)
         {
-            pedidos[i].id_produtos = id_produtos,
+            pedidos[i].id_produto = id_produtos,
             pedidos[i].id_cliente = id_cliente,
             pedidos[i].quantidade = quantidade,
             pedidos[i].total = total
+            return pedidos[i];
         }
         else{
             teveRetorno = false
