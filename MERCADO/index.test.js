@@ -6,7 +6,11 @@ const { default: expect } = require("expect");
 
 //TESTES DE PRODUTOS
 test("Cadastra produto", () => {
-    expect(produto.CadastraProduto("RTX 4090", 5000));
+    expect(produto.CadastraProduto("RTX 4090", 5000)).toEqual({
+        id: 1,
+        nome: "RTX 4090",
+        preco: 5000
+    });
 });
 
 test("Mostra um produto", () => {
@@ -24,6 +28,7 @@ test("Atualiza produtos", ()=>{
         preco: 5000
     });
 });
+
 
 //TESTES DO CLIENTE
 test("Cadastra cliente", ()=>{
@@ -46,6 +51,9 @@ test("Atualiza Cliente", ()=>{
 test("Deleta cliente!", ()=>{
     expect(cliente.DeletaCliente());
 })
+
+
+
 
 //TESTES DE PEDIDOS
 test("Cadastra Pedido: ", ()=>{
